@@ -1,0 +1,28 @@
+<script>
+    //Problema: Contar vogais maiúsculas
+    /*
+    Dada a lista de palavras, conte quantas vogais maiúsculas existem em cada palavra e retorne a quantidade de vogais maiúsculas encontradas.
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+    */
+    //AQUI, USE FOR...OF!
+    
+    //Entrada
+
+    let lista = ['Arara', 'Para', 'Radar', 'Tomate', 'Osso', 'Ana', 'Casa', 'Ovo'];
+
+    let maiusculas = [];
+
+
+    //Processamento
+
+    for (const item of lista) {
+        if (item.indexOf("A") === 0 || item.indexOf("E") === 0 || item.indexOf("I") === 0|| item.indexOf("O") === 0|| item.indexOf("U") === 0) {
+            maiusculas.push(item);
+        }
+    }
+
+    //Saída
+
+    document.write(`${maiusculas} <br> a quantidade de vogais Maiuscula e  : ${maiusculas.length}`);
+
+</script>
