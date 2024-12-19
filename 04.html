@@ -11,13 +11,13 @@
     const numero = Number(prompt(`informe um numero`));
     const potencia = Number(prompt(`informe um numero para ser a potencia do ultimo numero`));
 
-    multiplicacao = numero;
+   let multiplicacao = numero;
 
 
     //Processamento
 
-    for (let item = numero ; item <= potencia ; item++) {
-       multiplicacao *= numero;
+    for (let item = 1 ; item < potencia ; item++) {
+       multiplicacao = multiplicacao * numero;
     }
 
     //Saída

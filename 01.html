@@ -9,21 +9,29 @@
     //Entrada
 
     let lista = [1, 2, 3, 4, 5, 1, 4, 7, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
+  
 
-    let naoRepete = [];
 
 
     //Processamento
 
+    lista.sort((a, b) => a - b);
+    let numero = 0
+
+    let final=[];
+    
+
     for (let item of lista) {
-        const set = new Set(lista);
+        if (item !== numero ) {
+            final.push(item);
+        }
+
+        numero =item;
     }
 
-    naoRepete = Array.from(set);
    
-
     //Saída
 
-    document.write(`Lista sem numeros repetidos ${naoRepete}`);
+    document.write(`Lista sem numeros repetidos ${final}`);
 
 </script>
